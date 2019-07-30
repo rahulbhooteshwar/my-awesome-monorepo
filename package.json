@@ -1,0 +1,17 @@
+{
+  "name": "my-awesome-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "lerna run build --scope my-awesome-greeter && lerna run build --ignore my-awesome-greeter",
+    "test": "lerna run test"
+  },
+  "devDependencies": {
+    "babel-jest": "24.8.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "lerna": "^3.16.4"
+  }
+}

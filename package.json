@@ -7,7 +7,7 @@
   ],
   "scripts": {
     "build": "lerna run build --scope my-awesome-greeter && lerna run build --ignore my-awesome-greeter",
-    "test": "lerna run test"
+    "test": "lerna run build --scope my-awesome-greeter && lerna run test"
   },
   "devDependencies": {
     "babel-jest": "24.8.0",

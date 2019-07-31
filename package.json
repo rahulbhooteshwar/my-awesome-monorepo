@@ -10,8 +10,6 @@
     "test": "lerna run build --scope my-awesome-greeter && lerna run test"
   },
   "devDependencies": {
-    "babel-jest": "24.8.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "lerna": "^3.16.4"
   }
 }

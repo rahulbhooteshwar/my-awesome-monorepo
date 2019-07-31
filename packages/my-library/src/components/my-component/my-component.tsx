@@ -1,6 +1,6 @@
 import { Component, Prop, h, State } from '@stencil/core';
 import { format } from '../../utils/utils';
-import * as greeter from 'my-awesome-greeter/lib';
+import * as greeter from 'my-awesome-greeter';
 
 @Component({
   tag: 'my-component',

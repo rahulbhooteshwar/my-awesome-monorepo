@@ -5,8 +5,12 @@
   "files": [
     "lib/**/*"
   ],
+  "main": "lib/cjs/index.js",
+  "module": "lib/esm/index.js",
   "scripts": {
-    "build": "tsc",
+    "build:esm": "tsc --module es2015 --target es5 --outDir lib/esm",
+    "build:cjs": "tsc --module commonjs --target es5 --outDir lib/cjs ",
+    "build": "npm run build:esm && npm run build:cjs",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
     "lint": "tslint -p tsconfig.json",
     "test": "jest"
